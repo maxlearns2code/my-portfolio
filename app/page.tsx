@@ -1,7 +1,7 @@
-// maps to root `/` URL
+"use client";
 
-import variables from "./variables.module.scss";
+import NavBar from "./components/Navbar";
 
 export default function Page() {
-  return <h1 className="text-3xl" style={{ color: variables.primaryColor }}>Hello, Next.js!</h1>;
+  return <NavBar />;
 }
