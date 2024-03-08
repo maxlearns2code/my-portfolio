@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -12,7 +14,9 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <p className="ml-10 text-sm uppercase hover:border-b">Max Dewynter</p>
+        <p className="ml-10 font-bold text-sm uppercase text-[#5651e5] hover:border-b">
+          Max.<span className="text-gray-700">Dewynter</span>
+        </p>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -41,7 +45,9 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -52,7 +58,9 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <p className="text-1xl uppercase">Max Dewynter</p>
+              <p className="text-1xl uppercase text-[#5651e5]">
+                Max.<span className="text-gray-700">Dewynter</span>
+              </p>
               <div
                 onClick={HandleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
