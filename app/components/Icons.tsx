@@ -1,7 +1,10 @@
 /* istanbul ignore file */
 import PropTypes from "prop-types";
+interface IconProps {
+  name: string;
+}
 
-const Icon = ({ name }) => {
+const Icon: React.FC<IconProps> = ({ name }) => {
   let icon;
   switch (name) {
     case "html":
