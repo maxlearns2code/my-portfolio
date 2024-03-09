@@ -1,7 +1,8 @@
+import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Image from 'next/image';
+import Icon from "./components/Icons";
 
 export default function Main() {
   return (
@@ -40,7 +41,9 @@ export default function Main() {
       <div className="w-full md:h-screen p-2 flex items-center py-16">
         <div className="max-w-[1440px] m-auto md:grid grid-cols-3 gap-8">
           <div className="col-span-2">
-            <p className="uppercase text-xl tracking-widest text-[#5651e5]">About</p>
+            <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+              About
+            </p>
             <h2 className="py-4">Who I am</h2>
             <p className="py-2 text-gray-600">
               I am a Front-End Developer, specializing in building exceptional
@@ -76,7 +79,143 @@ export default function Main() {
             </p>
           </div>
           <div className="w-full h-auto m-auto shadow-xl shadow-grtay-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease duration-300">
-            <Image className="rounded-xl" src="/assets/character.webp" alt="character" width={400} height={400}/>
+            <Image
+              className="rounded-xl"
+              src="/assets/character.webp"
+              alt="character"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="w-full lg:h-screen p-2">
+        <div className="max-w-[1440px] mx-auto flex flex-col justify-center h-full">
+          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+            Skills
+          </p>
+          <h2 className="py-4">What I can do</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="html" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>HTML</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="css" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>CSS</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="sass" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Sass</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="tailwind" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Tailwind</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="javascript" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Javascript</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="react" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>React</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="next" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>NextJS</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="TS" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>TypeScript</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="figma" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Figma</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="redux" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Redux Toolkit</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="jest" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>Jest</h3>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-cols-2 gap-4 justify-center items-center">
+                <div className="m-auto">
+                  <Icon name="github" />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <h3>GitHub</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
