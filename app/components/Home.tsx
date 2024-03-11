@@ -13,7 +13,7 @@ const Home = () => {
           <h1 className="py-4 text-gray-700">
             Hello, my name is <span className="text-[#5651e5]">Max.</span>
           </h1>
-          <h1 className="py-2 text-gray-700">I&apos;m Front-End Developer</h1>
+          <h1 className="py-2 text-gray-700">I&apos;m a Front-End Developer</h1>
           <p className="py-4 text-gray-500 max-w-[70%] m-auto">
             I specialize in building fast, responsive, and accessible websites.
           </p>

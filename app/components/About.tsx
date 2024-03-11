@@ -44,11 +44,12 @@ const About = () => {
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-grtay-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease duration-300">
           <Image
-            className="rounded-xl"
+            className="rounded-xl m-auto"
             src="/assets/character.webp"
             alt="character"
             width={400}
-            height={300}
+            height={500}
+            loading="lazy"
             style={{ objectFit: "cover", width: "auto", height: "auto" }}
           />
         </div>
