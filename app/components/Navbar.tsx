@@ -80,9 +80,11 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <p className="text-1xl uppercase text-[#5651e5]">
-                Max.<span className="text-gray-700">Dewynter</span>
-              </p>
+              <Link href="/">
+                <p className="text-1xl uppercase text-[#5651e5]">
+                  Max.<span className="text-gray-700">Dewynter</span>
+                </p>
+              </Link>
               <div
                 onClick={HandleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -97,19 +99,19 @@ const Navbar = () => {
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
-                <Link href="/">
+                <Link onClick={() => setNav(false)} href="/#home">
                   <li className="py-4 text-sm">Home</li>
                 </Link>
-                <Link href="/">
+                <Link onClick={() => setNav(false)} href="/#about">
                   <li className="py-4 text-sm">About</li>
                 </Link>
-                <Link href="/">
+                <Link onClick={() => setNav(false)} href="/#skills">
                   <li className="py-4 text-sm">Skills</li>
                 </Link>
-                <Link href="/">
+                <Link onClick={() => setNav(false)} href="/#projects">
                   <li className="py-4 text-sm">Projects</li>
                 </Link>
-                <Link href="/">
+                <Link onClick={() => setNav(false)} href="/#contact">
                   <li className="py-4 text-sm">Contact</li>
                 </Link>
               </ul>

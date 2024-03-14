@@ -3,7 +3,7 @@ import bookiImg from "/public/assets/projects/booki.webp";
 import ohmyfoodImg from "/public/assets/projects/ohmyfood.webp";
 import sophiebluelImg from "/public/assets/projects/sophiebluel.webp";
 import kasaImg from "/public/assets/projects/kasa.webp";
-import eventImg from "/public/assets/projects/724events.webp";
+import eventsImg from "/public/assets/projects/724events.webp";
 import argentbankImg from "/public/assets/projects/argentbank.webp";
 
 const Projects = () => {
@@ -18,44 +18,44 @@ const Projects = () => {
           <Projectsitems
             title="Booki"
             backgroungImg={bookiImg}
-            alt="représentation du projet booki"
+            alt="representation of booki project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/booki"
           />
           <Projectsitems
             title="Ohmyfood"
             backgroungImg={ohmyfoodImg}
-            alt="représentation du projet ohmyfood"
+            alt="representation of ohmyfood project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/ohmyfood"
           />
           <Projectsitems
             title="Sophie Bluel"
             backgroungImg={sophiebluelImg}
-            alt="représentation du projet sophie bluel"
+            alt="representation of sophie bluel project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/sophiebluel"
           />
           <Projectsitems
             title="Kasa"
             backgroungImg={kasaImg}
-            alt="représentation du projet kasa"
+            alt="representation of kasa project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/kasa"
           />
           <Projectsitems
             title="724 Events"
-            backgroungImg={eventImg}
-            alt="représentation du projet 724 Events"
+            backgroungImg={eventsImg}
+            alt="representation of 724 Events project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/724events"
           />
           <Projectsitems
             title="Argent Bank"
             backgroungImg={argentbankImg}
-            alt="représentation du projet Argent Bank"
+            alt="representation of Argent Bank project"
             description=""
-            projectUrl="/"
+            projectUrl="/projects/argentbank"
           />
         </div>
       </div>
