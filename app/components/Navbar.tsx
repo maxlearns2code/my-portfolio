@@ -1,14 +1,38 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navColor, setNavColor] = useState("#1f2937");
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const url = `${pathname}${searchParams}`;
+    if (
+      url === "/projects/booki" ||
+      url === "/projects/ohmyfood" ||
+      url === "/projects/sophiebluel" ||
+      url === "/projects/kasa" ||
+      url === "/projects/724events" ||
+      url === "/projects/argentbank"
+    ) {
+      setNavBg("transparent");
+      setNavColor("#f8f8f8");
+    } else {
+      setNavBg("#ecf0f3");
+      setNavColor("#1f2937");
+    }
+  }, [pathname, searchParams]);
+
   const HandleNav = () => {
     setNav(!nav);
   };
@@ -27,6 +51,7 @@ const Navbar = () => {
   }, []);
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -40,7 +65,7 @@ const Navbar = () => {
           </p>
         </Link>
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${navColor}` }} className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -120,18 +145,33 @@ const Navbar = () => {
                   Let&apos;s connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsPersonLinesFill />
-                  </div>
+                  <Link
+                    href="https://www.linkedin.com/in/maxime-dewynter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://github.com//maxlearns2code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </Link>
+                  <Link
+                    href="mailto:maxdevvynter@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

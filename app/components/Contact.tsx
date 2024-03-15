@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
@@ -32,7 +31,9 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full">
             <div className="lg:p-4 h-full">
               <div className="flex flex-col py-4">
-                <h2 className="py-2"><span className="text-[#5651e5]">Max</span> Dewynter</h2>
+                <h2 className="py-2">
+                  <span className="text-[#5651e5]">Max</span> Dewynter
+                </h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I&apos;m available for freelance or full-time positions.
@@ -40,18 +41,33 @@ const Contact = () => {
                 </p>
                 <p className="uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsPersonLinesFill />
-                  </div>
+                  <Link
+                    href="https://www.linkedin.com/in/maxime-dewynter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://github.com//maxlearns2code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </Link>
+                  <Link
+                    href="mailto:maxdevvynter@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
