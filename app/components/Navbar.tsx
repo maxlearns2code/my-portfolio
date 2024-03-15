@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -13,10 +13,10 @@ const Navbar = () => {
   const [navColor, setNavColor] = useState("#1f2937");
 
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  
 
   useEffect(() => {
-    const url = `${pathname}${searchParams}`;
+    const url = `${pathname}`;
     if (
       url === "/projects/booki" ||
       url === "/projects/ohmyfood" ||
@@ -31,7 +31,7 @@ const Navbar = () => {
       setNavBg("#ecf0f3");
       setNavColor("#1f2937");
     }
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   const HandleNav = () => {
     setNav(!nav);
