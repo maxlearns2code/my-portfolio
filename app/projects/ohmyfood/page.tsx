@@ -33,8 +33,8 @@ export default function Page() {
             It is a simple project but it helped me to improve my skills in HTML,
             CSS and Sass.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <button className="mt-4 mr-8">Demo</button>
+          <button className="mt-4">Code</button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

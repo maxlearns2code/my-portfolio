@@ -58,10 +58,10 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full 2xl:px-16">
         <Link href="/">
-          <div className="ml-10 font-bold text-sm uppercase text-tertiary-color hover:border-b">
-            <Image src="/assets/logo.webp" alt="logo" width={150} height={200} style={{ objectFit: "cover", width: "auto", height: "auto" }} />
+          <div className="ml-5 font-bold text-sm uppercase text-tertiary-color hover:border-b">
+            <Image src="/assets/logo.webp" alt="logo" width={150} height={30} style={{ objectFit: "cover", width: "auto", height: "auto" }} />
           </div>
         </Link>
         <div>
@@ -86,7 +86,7 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={HandleNav} className="md:hidden">
+          <div onClick={HandleNav} className="md:hidden mr-5">
             <AiOutlineMenu size={25} />
           </div>
         </div>

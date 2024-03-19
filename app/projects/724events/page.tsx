@@ -30,8 +30,8 @@ export default function Page() {
           <p>
             724 Events is a simple HTML / CSS / Sass / JavaScript / Jest project. It is a landing page for an event website. I used HTML, CSS, Sass, JavaScript and Jest to build it. It is a simple project but it helped me to improve my skills in HTML, CSS, Sass, JavaScript and Jest.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <button className="mt-4 mr-8">Demo</button>
+          <button className="mt-4">Code</button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
