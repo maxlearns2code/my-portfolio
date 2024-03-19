@@ -1,54 +1,52 @@
+import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1440px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
+    <section
+      id="home"
+      className="w-full md:h-screen p-10 flex items-center text-center"
+    >
+      <div className="max-w-[1440px] m-auto md:grid grid-cols-4 gap-8 items-center">
+        <div className="col-span-2 p-10">
+          <p className="uppercase text-sm tracking-widest text-gray-700 text-left">
             Let&apos;s build something amazing together.
           </p>
-          <h1 className="py-4 text-gray-700">
-            Hello, my name is <span className="text-[#5651e5]">Max.</span>
+          <h1 className="py-2 text-secondary-color text-left">
+            Hi, my name is <span className="text-tertiary-color">Max.</span><br />
+            <span className="py-2 text-secondary-color">
+              I&apos;m a Front-End Developer
+            </span>
           </h1>
-          <h1 className="py-2 text-gray-700">I&apos;m a Front-End Developer</h1>
-          <p className="py-4 text-gray-500 max-w-[70%] m-auto">
+          <p className="text-gray-700 max-w-[70%] text-left">
             I specialize in building fast, responsive, and accessible websites.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <Link
-              href="https://www.linkedin.com/in/maxime-dewynter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedinIn />
-              </div>
+          <div className="flex max-w-[330px] py-8">
+            <Link href="/#contact">
+              <button className="px-4 py-2 mr-8">Hire me</button>
             </Link>
             <Link
-              href="https://github.com//maxlearns2code"
+              href="/assets/maxdewyntercv.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub />
-              </div>
-            </Link>
-            <Link
-              href="mailto:maxdevvynter@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <AiOutlineMail />
-              </div>
+              <button className="px-4 py-2">Download CV</button>
             </Link>
           </div>
         </div>
+        <div className="col-span-2">
+          <Image
+            className="rounded-xl m-auto"
+            src="/assets/home.webp"
+            alt="character"
+            width={705}
+            height={565}
+            loading="eager"
+            style={{ objectFit: "cover", width: "auto", height: "auto" }}
+          />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

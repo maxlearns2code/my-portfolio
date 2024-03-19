@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -9,11 +10,10 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [navColor, setNavColor] = useState("#1f2937");
+  const [navBg, setNavBg] = useState("var(--primary-color)");
+  const [navColor, setNavColor] = useState("var(--secondary-color)");
 
   const pathname = usePathname();
-  
 
   useEffect(() => {
     const url = `${pathname}`;
@@ -26,10 +26,10 @@ const Navbar = () => {
       url === "/projects/argentbank"
     ) {
       setNavBg("transparent");
-      setNavColor("#f8f8f8");
+      setNavColor("var(--primary-color)");
     } else {
-      setNavBg("#ecf0f3");
-      setNavColor("#1f2937");
+      setNavBg("var(--primary-color)");
+      setNavColor("var(--secondary-color)");
     }
   }, [pathname]);
 
@@ -50,7 +50,7 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div
+    <nav
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
@@ -60,9 +60,9 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <p className="ml-10 font-bold text-sm uppercase text-[#5651e5] hover:border-b">
-            Max.<span className="text-gray-700">Dewynter</span>
-          </p>
+          <div className="ml-10 font-bold text-sm uppercase text-tertiary-color hover:border-b">
+            <Image src="/assets/logo.webp" alt="logo" width={150} height={200} style={{ objectFit: "cover", width: "auto", height: "auto" }} />
+          </div>
         </Link>
         <div>
           <ul style={{ color: `${navColor}` }} className="hidden md:flex">
@@ -99,14 +99,14 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary-color p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <p className="text-1xl uppercase text-[#5651e5]">
+                <p className="text-1xl uppercase text-tertiary-color">
                   Max.<span className="text-gray-700">Dewynter</span>
                 </p>
               </Link>
@@ -141,7 +141,7 @@ const Navbar = () => {
                 </Link>
               </ul>
               <div className="pt-40">
-                <p className=" uppercase tracking-widest text-[#5651e5]">
+                <p className=" uppercase tracking-widest text-tertiary-color">
                   Let&apos;s connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
@@ -178,7 +178,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navbar;

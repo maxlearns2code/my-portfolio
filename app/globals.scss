@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./sass/fonts.scss";
+
+:root {
+  --primary-color: #f5f6f7;
+  --secondary-color: #2d3033;
+  --tertiary-color: #5b45ff;
+  --quaternary-color: #d0f500;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  font-family: Nebulas, sans-serif;
 }
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply bg-primary-color text-secondary-color tracking-wide;
   }
   h1,
   h2,
@@ -19,12 +31,12 @@ html {
     @apply font-bold;
   }
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply text-6xl sm:text-6xl md:text-7xl;
   }
   h2 {
     @apply text-3xl sm:text-4xl md:text-5xl;
   }
   button {
-    @apply shadow-xl shadow-gray-400 bg-blue-500 text-white px-4 py-2 rounded-xl uppercase bg-gradient-to-r from-blue-500 to-blue-600;
+    @apply shadow-xl shadow-gray-400 items-center bg-tertiary-color text-white font-bold tracking-wider px-4 py-2 rounded-xl uppercase hover:bg-quaternary-color hover:text-secondary-color transition-all duration-300 ease-in-out;
   }
 }

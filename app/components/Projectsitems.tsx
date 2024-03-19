@@ -11,7 +11,7 @@ interface ProjectsitemsProps {
 
 const Projectsitems: React.FC<ProjectsitemsProps> = ({title, backgroungImg, alt, description, projectUrl}) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+    <article className="relative flex items-center justify-center h-auto w-full shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-tertiary-color to-primary-color">
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={backgroungImg}
@@ -34,7 +34,7 @@ const Projectsitems: React.FC<ProjectsitemsProps> = ({title, backgroungImg, alt,
           </p>
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

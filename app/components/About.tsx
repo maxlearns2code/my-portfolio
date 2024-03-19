@@ -1,19 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <div id="about"className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1440px] m-auto md:grid grid-cols-3 gap-8">
+    <section id="about" className="w-full md:h-screen p-10 flex items-center">
+      <div className="max-w-[1440px] m-auto md:grid grid-cols-4 gap-8 items-center">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+          <p className="uppercase text-xl tracking-widest text-tertiary-color">
             About
           </p>
-          <h2 className="py-4">Who I am</h2>
-          <p className="py-2 text-gray-600">
+          <h2 className="py-4 text-secondary-color">Who I am</h2>
+          <p className="py-2 text-gray-700 text-justify">
             I am a Front-End Developer, specializing in building exceptional
             websites, applications, and everything in between.
           </p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-700 text-justify">
             My career has seen a transformation from traditional finance and HR
             roles to the dynamic field of technology. Progressing from junior
             general accountant to leadership positions such as financial
@@ -23,7 +24,7 @@ const About = () => {
             honed my ability to analyze complex data and communicate effectively
             with stakeholders.
           </p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-700 text-justify">
             Motivated by a passion for technology and a drive for continuous
             growth, I have embraced a new challenge as a Front-End Developer.
             Through dedicated studies and immersive projects, I&apos;ve become
@@ -32,20 +33,22 @@ const About = () => {
             my career reflects my commitment to learning and adapting to new
             challenges.
           </p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-700 text-justify">
             I am eager to bring my unique blend of skills and experience to a
             team that values collaboration, creativity, and innovation. I am
             excited to contribute to projects that push the boundaries of what
             is possible in web development.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out my work and get in touch if you&apos;d like to work
-          </p>
+          <Link href="/#projects">
+            <p className="py-2 text-gray-700 underline cursor-pointer">
+              Check out some of my latest projects.
+            </p>
+          </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-grtay-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease duration-300">
+        <div className="col-span-2">
           <Image
             className="rounded-xl m-auto"
-            src="/assets/character.webp"
+            src="/assets/about.webp"
             alt="character"
             width={400}
             height={500}
@@ -54,7 +57,7 @@ const About = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

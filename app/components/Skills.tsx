@@ -2,9 +2,9 @@ import Icon from "./Icons";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <section id="skills" className="w-full lg:h-screen p-10">
       <div className="max-w-[1440px] mx-auto flex flex-col justify-center h-full">
-        <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+        <p className="uppercase text-xl tracking-widest text-tertiary-color">
           Skills
         </p>
         <h2 className="py-4">What I can do</h2>
@@ -132,7 +132,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
