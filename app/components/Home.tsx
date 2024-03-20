@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { RiDownload2Fill } from "react-icons/ri";
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="w-full md:h-screen p-10 flex items-center text-center"
+      className="w-full md:h-screen p-10 flex items-center overflow-hidden"
     >
-      <div className="max-w-[1440px] m-auto flex flex-col-reverse md:grid grid-cols-4 gap-8 items-center">
-        <div className="col-span-2 md:ml-20">
-          <p className="uppercase text-sm tracking-widest text-gray-700 text-left">
+      <div className="max-w-[1440px] m-auto flex flex-col-reverse md:flex-row gap-8 items-center">
+        <div className="w-[50%] md:ml-20 text-animation">
+          <p className="uppercase mt-8 text-sm tracking-widest text-gray-700 text-left">
             Let&apos;s build something amazing together.
           </p>
           <h1 className="py-2 text-secondary-color text-left">
@@ -31,13 +32,13 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button>Download CV</button>
+              <button className="flex gap-1">My CV <RiDownload2Fill size={20}/></button>
             </Link>
           </div>
         </div>
-        <div className="col-span-2 my-10">
+        <div className="w-[50%] mt-10 md:mt-0 img-animation">
           <Image
-            className="rounded-xl m-auto"
+            className="rounded-xl"
             src="/assets/home.webp"
             alt="character"
             width={705}
