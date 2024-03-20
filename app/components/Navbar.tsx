@@ -1,37 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("var(--primary-color)");
-  const [navColor, setNavColor] = useState("var(--secondary-color)");
-
-  const pathname = usePathname();
-
-  useEffect(() => {
-    const url = `${pathname}`;
-    if (
-      url === "/projects/booki" ||
-      url === "/projects/ohmyfood" ||
-      url === "/projects/sophiebluel" ||
-      url === "/projects/kasa" ||
-      url === "/projects/724events" ||
-      url === "/projects/argentbank"
-    ) {
-      setNavBg("transparent");
-      setNavColor("var(--primary-color)");
-    } else {
-      setNavBg("var(--primary-color)");
-      setNavColor("var(--secondary-color)");
-    }
-  }, [pathname]);
 
   const HandleNav = () => {
     setNav(!nav);
@@ -50,46 +29,38 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav
-      style={{ backgroundColor: `${navBg}` }}
-      className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
-      }
-    >
-      <div className="flex justify-between items-center w-full h-full 2xl:px-16">
-        <Link href="/">
-          <div className="ml-5 font-bold text-sm uppercase text-tertiary-color hover:border-b">
-            <Image src="/assets/logo.webp" alt="logo" width={150} height={30} style={{ objectFit: "cover", width: "auto", height: "auto" }} />
-          </div>
-        </Link>
-        <div>
-          <ul style={{ color: `${navColor}` }} className="hidden md:flex">
+    <div className="fixed w-full h-20 shadow-md shadow-gray-400 z-[10] bg-primary-color dark:bg-secondary-color">
+      <div className="flex justify-between items-center w-full h-full">
+        <div className="flex">
+          <Link href="/">
+            <p className="ml-10 mr-2 mt-1 uppercase font-bold hover:border-b">
+              <span className="text-tertiary-color">Max.</span>Dewynter
+            </p>
+          </Link>
+          <ThemeSwitch />
+        </div>
+        <nav>
+          <ul className="hidden md:flex mt-1">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="mr-10 uppercase hover:border-b">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="mr-10 uppercase hover:border-b">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="mr-10 uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
+              <li className="mr-10 uppercase hover:border-b">Projects</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
+              <li className="mr-10 uppercase hover:border-b">Contact</li>
             </Link>
           </ul>
           <div onClick={HandleNav} className="md:hidden mr-5">
             <AiOutlineMenu size={25} />
           </div>
-        </div>
+        </nav>
       </div>
       <div
         className={
@@ -99,20 +70,20 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary-color p-10 ease-in duration-500"
+              ? "md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary-color dark:bg-secondary-color p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <p className="text-1xl uppercase text-tertiary-color">
-                  Max.<span className="text-gray-700">Dewynter</span>
+                <p className="text-1xl font-bold uppercase">
+                <span className="text-tertiary-color">Max.</span>Dewynter
                 </p>
               </Link>
               <div
                 onClick={HandleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>
@@ -125,23 +96,23 @@ const Navbar = () => {
             <div className="py-4 flex flex-col">
               <ul className="uppercase">
                 <Link onClick={() => setNav(false)} href="/#home">
-                  <li className="py-4 text-sm">Home</li>
+                  <li className="py-4 uppercase">Home</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href="/#about">
-                  <li className="py-4 text-sm">About</li>
+                  <li className="py-4 uppercase">About</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href="/#skills">
-                  <li className="py-4 text-sm">Skills</li>
+                  <li className="py-4 uppercase">Skills</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href="/#projects">
-                  <li className="py-4 text-sm">Projects</li>
+                  <li className="py-4 uppercase">Projects</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href="/#contact">
-                  <li className="py-4 text-sm">Contact</li>
+                  <li className="py-4 uppercase">Contact</li>
                 </Link>
               </ul>
               <div className="pt-40">
-                <p className=" uppercase tracking-widest text-tertiary-color">
+                <p className=" uppercase text-tertiary-color">
                   Let&apos;s connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
@@ -150,7 +121,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </Link>
@@ -159,7 +130,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </Link>
@@ -168,7 +139,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                   </Link>
@@ -178,7 +149,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 export default Navbar;

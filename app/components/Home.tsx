@@ -9,18 +9,18 @@ const Home = () => {
       className="w-full md:h-screen p-10 flex items-center overflow-hidden"
     >
       <div className="max-w-[1440px] m-auto flex flex-col-reverse md:flex-row gap-8 items-center">
-        <div className="w-[50%] md:ml-20 text-animation">
-          <p className="uppercase mt-8 text-sm tracking-widest text-gray-700 text-left">
+        <div className="md:w-[50%] md:ml-20 text-animation">
+          <p className="uppercase mt-8 text-sm tracking-widest text-left">
             Let&apos;s build something amazing together.
           </p>
-          <h1 className="py-2 text-secondary-color text-left">
+          <h1 className="py-2 text-left">
             Hi, I&apos;m <span className="text-tertiary-color">Max.</span>
             <br />
-            <span className="py-2 text-secondary-color">
+            <span className="py-2">
               A Front-End Developer
             </span>
           </h1>
-          <p className="text-gray-700 max-w-[70%] text-left">
+          <p className="max-w-[70%] text-left">
             I specialize in building fast, responsive, and accessible websites.
           </p>
           <div className="flex max-w-[330px] py-8">
@@ -36,7 +36,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[50%] mt-10 md:mt-0 img-animation">
+        <div className="md:w-[50%] mt-10 md:mt-0 img-animation">
           <Image
             className="rounded-xl"
             src="/assets/home.webp"

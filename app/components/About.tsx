@@ -9,12 +9,12 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-tertiary-color">
             About
           </p>
-          <h2 className="py-4 text-secondary-color">Who I am</h2>
-          <p className="py-2 text-gray-700 text-justify">
+          <h2 className="py-4">Who I am</h2>
+          <p className="py-2 text-justify">
             I am a Front-End Developer, specializing in building exceptional
             websites, applications, and everything in between.
           </p>
-          <p className="py-2 text-gray-700 text-justify">
+          <p className="py-2 text-justify">
             My career has seen a transformation from traditional finance and HR
             roles to the dynamic field of technology. Progressing from junior
             general accountant to leadership positions such as financial
@@ -24,7 +24,7 @@ const About = () => {
             honed my ability to analyze complex data and communicate effectively
             with stakeholders.
           </p>
-          <p className="py-2 text-gray-700 text-justify">
+          <p className="py-2 text-justify">
             Motivated by a passion for technology and a drive for continuous
             growth, I have embraced a new challenge as a Front-End Developer.
             Through dedicated studies and immersive projects, I&apos;ve become
@@ -33,14 +33,14 @@ const About = () => {
             my career reflects my commitment to learning and adapting to new
             challenges.
           </p>
-          <p className="py-2 text-gray-700 text-justify">
+          <p className="py-2 text-justify">
             I am eager to bring my unique blend of skills and experience to a
             team that values collaboration, creativity, and innovation. I am
             excited to contribute to projects that push the boundaries of what
             is possible in web development.
           </p>
           <Link href="/#projects">
-            <p className="py-2 text-gray-700 underline cursor-pointer">
+            <p className="py-2 underline cursor-pointer">
               Check out some of my latest projects.
             </p>
           </Link>

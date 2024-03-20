@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import "./globals.scss";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Max | Front-End Developer",
@@ -13,10 +14,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
