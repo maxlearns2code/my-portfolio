@@ -1,10 +1,10 @@
-import Icon from "./Icons";
+import Icon from "../components/Icons";
 
 const Skills = () => {
   return (
     <section id="skills" className="w-full lg:h-screen p-10">
       <div className="max-w-[1440px] mx-auto flex flex-col justify-center h-full">
-        <p className="uppercase text-xl tracking-widest text-tertiary-color">
+        <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
           Skills
         </p>
         <h2 className="py-4">What I can do</h2>

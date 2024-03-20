@@ -10,17 +10,15 @@ const Home = () => {
     >
       <div className="max-w-[1440px] m-auto flex flex-col-reverse md:flex-row gap-8 items-center">
         <div className="md:w-[50%] md:ml-20 text-animation">
-          <p className="uppercase mt-8 text-sm tracking-widest text-left">
+          <p className="uppercase mt-8 text-sm tracking-widest">
             Let&apos;s build something amazing together.
           </p>
-          <h1 className="py-2 text-left">
-            Hi, I&apos;m <span className="text-tertiary-color">Max.</span>
+          <h1 className="py-2">
+            Hi, I&apos;m <span className="text-tertiary-color dark:text-quaternary-color">Max.</span>
             <br />
-            <span className="py-2">
-              A Front-End Developer
-            </span>
+            <span className="py-2">A Front-End Developer</span>
           </h1>
-          <p className="max-w-[70%] text-left">
+          <p className="max-w-[70%]">
             I specialize in building fast, responsive, and accessible websites.
           </p>
           <div className="flex max-w-[330px] py-8">
@@ -28,11 +26,13 @@ const Home = () => {
               <button className="mr-8">Hire me</button>
             </Link>
             <Link
-              href="/assets/maxdewyntercv.pdf"
+              href="/assets/maxdewyntercv.jpg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="flex gap-1">My CV <RiDownload2Fill size={20}/></button>
+              <button className="flex gap-1">
+                My CV <RiDownload2Fill size={20} />
+              </button>
             </Link>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Home = () => {
           <Image
             className="rounded-xl"
             src="/assets/home.webp"
-            alt="character"
+            alt="home character"
             width={705}
             height={565}
             loading="eager"

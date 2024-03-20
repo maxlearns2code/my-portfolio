@@ -1,18 +1,18 @@
-import Projectsitems from "./Projectsitems";
-import bookiImg from "/public/assets/projects/booki.webp";
-import ohmyfoodImg from "/public/assets/projects/ohmyfood.webp";
-import sophiebluelImg from "/public/assets/projects/sophiebluel.webp";
-import kasaImg from "/public/assets/projects/kasa.webp";
+import Projectsitems from "../components/Projectsitems";
 import eventsImg from "/public/assets/projects/724events.webp";
 import argentbankImg from "/public/assets/projects/argentbank.webp";
-import ninacarducciImg from "/public/assets/projects/ninacarducci.webp";
+import bookiImg from "/public/assets/projects/booki.webp";
+import kasaImg from "/public/assets/projects/kasa.webp";
 import myportfolioImg from "/public/assets/projects/myportfolio.webp";
+import ninacarducciImg from "/public/assets/projects/ninacarducci.webp";
+import ohmyfoodImg from "/public/assets/projects/ohmyfood.webp";
+import sophiebluelImg from "/public/assets/projects/sophiebluel.webp";
 
 const Projects = () => {
   return (
     <section id="projects" className="w-full p-10">
       <div className="max-w-[1440px] mx-auto px-2 py-16">
-        <p className="uppercase text-xl tracking-widest text-tertiary-color">
+        <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve built</h2>

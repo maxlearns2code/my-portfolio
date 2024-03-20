@@ -1,9 +1,9 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Footer from "./components/Footer";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
+import Footer from "./containers/Footer";
+import Home from "./containers/Home";
+import Projects from "./containers/Projects";
+import Skills from "./containers/Skills";
 
 export default function Main() {
   return (

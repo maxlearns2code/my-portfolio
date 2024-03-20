@@ -23,7 +23,7 @@ export default function Page() {
       </div>
       <div className="max-w-[1440px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className="uppercase text-xl tracking-widest text-tertiary-color">
+          <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
             Projects
           </p>
           <h2 className="py-4">What I&apos;ve built</h2>

@@ -19,7 +19,7 @@ const Contact = () => {
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300 m-auto"
                   src="/assets/contact.webp"
-                  alt="character"
+                  alt="contact character"
                   width={400}
                   height={300}
                   loading="lazy"
@@ -32,7 +32,10 @@ const Contact = () => {
             <div className="lg:p-4 h-full flex">
               <div className="flex flex-col py-4 justify-center ">
                 <h2 className="py-2">
-                  <span className="text-tertiary-color">Max</span> Dewynter
+                  <span className="text-tertiary-color dark:text-quaternary-color">
+                    Max
+                  </span>{" "}
+                  Dewynter
                 </h2>
                 <p>Front-End Developer</p>
                 <p className="py-2">
@@ -42,30 +45,39 @@ const Contact = () => {
                 <p className="uppercase py-2">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
                   <Link
+                    tabIndex={0}
+                    aria-label="take a look at my linkedin profile"
                     href="https://www.linkedin.com/in/maxime-dewynter"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
+                      <span className="sr-only">Linkedin link</span>
                     </div>
                   </Link>
                   <Link
+                    tabIndex={0}
+                    aria-label="take a look at my github profile"
                     href="https://github.com//maxlearns2code"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
+                      <span className="sr-only">Github link</span>
                     </div>
                   </Link>
                   <Link
+                    tabIndex={0}
+                    aria-label="send me an email"
                     href="mailto:maxdevvynter@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
+                      <span className="sr-only">Email link</span>
                     </div>
                   </Link>
                 </div>
@@ -76,7 +88,11 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-tertiary-color" size={30} />
+              <HiOutlineChevronDoubleUp
+                className="text-tertiary-color dark:text-quaternary-color"
+                size={25}
+              />
+              <span className="sr-only">Back to Home</span>
             </div>
           </Link>
         </div>

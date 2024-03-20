@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 
-
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -29,12 +28,21 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div className="fixed w-full h-20 shadow-md shadow-gray-400 z-[10] bg-primary-color dark:bg-secondary-color">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-md shadow-gray-400 z-[10] bg-primary-color dark:bg-secondary-color"
+          : "fixed w-full h-20 z-[10] bg-primary-color dark:bg-secondary-color"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full">
         <div className="flex">
           <Link href="/">
             <p className="ml-10 mr-2 mt-1 uppercase font-bold hover:border-b">
-              <span className="text-tertiary-color">Max.</span>Dewynter
+              <span className="text-tertiary-color dark:text-quaternary-color">
+                Max.
+              </span>
+              Dewynter
             </p>
           </Link>
           <ThemeSwitch />
@@ -78,7 +86,10 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <Link href="/">
                 <p className="text-1xl font-bold uppercase">
-                <span className="text-tertiary-color">Max.</span>Dewynter
+                  <span className="text-tertiary-color dark:text-quaternary-color">
+                    Max.
+                  </span>
+                  Dewynter
                 </p>
               </Link>
               <div
@@ -112,35 +123,44 @@ const Navbar = () => {
                 </Link>
               </ul>
               <div className="pt-40">
-                <p className=" uppercase text-tertiary-color">
+                <p className=" uppercase text-tertiary-color dark:text-quaternary-color">
                   Let&apos;s connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                   <Link
+                    tabIndex={0}
+                    aria-label="take a look at my linkedin profile"
                     href="https://www.linkedin.com/in/maxime-dewynter"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaLinkedinIn />
+                      <span className="sr-only">Linkedin link</span>
                     </div>
                   </Link>
                   <Link
+                    tabIndex={0}
+                    aria-label="take a look at my github profile"
                     href="https://github.com//maxlearns2code"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <FaGithub />
+                      <span className="sr-only">Github link</span>
                     </div>
                   </Link>
                   <Link
+                    tabIndex={0}
+                    aria-label="send me an email"
                     href="mailto:maxdevvynter@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                       <AiOutlineMail />
+                      <span className="sr-only">Email link</span>
                     </div>
                   </Link>
                 </div>
