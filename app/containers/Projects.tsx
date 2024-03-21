@@ -10,8 +10,8 @@ import sophiebluelImg from "/public/assets/projects/sophiebluel.webp";
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full p-10">
-      <div className="max-w-[1440px] mx-auto px-2 py-16">
+    <section id="projects" className="w-full px-10 pt-10">
+      <div className="max-w-[1440px] mx-auto pt-14">
         <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
           Projects
         </p>
@@ -21,7 +21,8 @@ const Projects = () => {
             title="Booki"
             backgroungImg={bookiImg}
             alt="representation of booki project"
-            description=""
+            description="Booki is a landing page for a
+            booking website, I used HTML and CSS to build it."
             projectUrl="/projects/booki"
           />
           <Projectsitems

@@ -38,6 +38,6 @@ html {
     @apply text-3xl sm:text-4xl md:text-5xl;
   }
   button {
-    @apply shadow-sm shadow-gray-400 bg-tertiary-color text-primary-color px-4 md:px-6  pt-2 pb-1 font-bold tracking-wider rounded-3xl hover:bg-quaternary-color hover:text-secondary-color transition-all duration-300 ease-in-out;
+    @apply shadow-sm shadow-gray-400 bg-tertiary-color text-primary-color hover:bg-quaternary-color hover:text-secondary-color dark:bg-quaternary-color dark:text-secondary-color dark:hover:bg-tertiary-color dark:hover:text-primary-color px-4 md:px-6  pt-2 pb-1 font-bold tracking-wider rounded-3xl  transition-all duration-300 ease-in-out;
   }
 }

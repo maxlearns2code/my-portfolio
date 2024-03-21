@@ -28,7 +28,7 @@ const Projectsitems: React.FC<ProjectsitemsProps> = ({title, backgroungImg, alt,
         <p className="pb-4 pt-2 text-center">
           {description}
         </p>
-        <Link href={projectUrl}>
+        <Link className="flex items-center justify-center" href={projectUrl}>
           <button>
             More info
           </button>

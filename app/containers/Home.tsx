@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full md:h-screen p-10 flex items-center overflow-hidden"
+      className="w-full md:h-screen px-10 pt-10 flex items-center overflow-hidden"
     >
-      <div className="max-w-[1440px] m-auto flex flex-col-reverse md:flex-row gap-8 items-center">
-        <div className="md:w-[50%] md:ml-20 text-animation">
+      <div className="max-w-[1440px] m-auto pt-14 flex flex-col-reverse md:flex-row gap-8 items-center">
+        <div className="md:w-[50%] md:ml-20 w-[275px] text-animation">
           <p className="uppercase mt-8 text-sm tracking-widest">
             Let&apos;s build something amazing together.
           </p>
@@ -21,7 +21,7 @@ const Home = () => {
           <p className="max-w-[70%]">
             I specialize in building fast, responsive, and accessible websites.
           </p>
-          <div className="flex max-w-[330px] py-8">
+          <div className="flex justify-center md:justify-start max-w-[330px] py-8">
             <Link href="/#contact">
               <button className="mr-8">Hire me</button>
             </Link>
@@ -36,7 +36,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-[50%] mt-10 md:mt-0 img-animation">
+        <div className="md:w-[50%] img-animation">
           <Image
             className="rounded-xl"
             src="/assets/home.webp"

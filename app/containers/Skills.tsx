@@ -2,8 +2,8 @@ import Icon from "../components/Icons";
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full lg:h-screen p-10">
-      <div className="max-w-[1440px] mx-auto flex flex-col justify-center h-full">
+    <section id="skills" className="w-full lg:h-screen px-10 pt-10">
+      <div className="max-w-[1440px] m-auto pt-14 w-full flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
           Skills
         </p>
