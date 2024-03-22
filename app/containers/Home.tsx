@@ -38,11 +38,10 @@ const Home = () => {
         </div>
         <div className="md:w-[50%] img-animation">
           <Image
-            className="rounded-xl"
             src="/assets/home.webp"
             alt="home character"
-            width={705}
-            height={565}
+            width={710}
+            height={568}
             loading="eager"
             style={{ objectFit: "cover", width: "auto", height: "auto" }}
           />

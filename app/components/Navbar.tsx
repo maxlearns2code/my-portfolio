@@ -49,21 +49,21 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className="hidden md:flex mt-1">
-            <Link href="/#home">
-              <li className="mr-10 uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="mr-10 uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="mr-10 uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="mr-10 uppercase hover:border-b">Projects</li>
-            </Link>
-            <Link href="/#contact">
-              <li className="mr-10 uppercase hover:border-b">Contact</li>
-            </Link>
+            <li className="mr-10 uppercase hover:border-b">
+              <Link href="/#home">Home</Link>
+            </li>
+            <li className="mr-10 uppercase hover:border-b">
+              <Link href="/#about">About</Link>
+            </li>
+            <li className="mr-10 uppercase hover:border-b">
+              <Link href="/#skills">Skills</Link>
+            </li>
+            <li className="mr-10 uppercase hover:border-b">
+              <Link href="/#projects">Projects</Link>
+            </li>
+            <li className="mr-10 uppercase hover:border-b">
+              <Link href="/#contact">Contact</Link>
+            </li>
           </ul>
           <div onClick={HandleNav} className="md:hidden mr-5">
             <AiOutlineMenu size={25} />
