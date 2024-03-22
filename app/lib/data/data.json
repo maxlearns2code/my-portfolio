@@ -1,10 +1,69 @@
-[
-  {
-    "id": 1,
-    "title": "",
-    "backgroungImg": "",
-    "alt": "",
-    "description": "",
-    "projectUrl": ""
-  }
-]
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Booki",
+      "cover": "/assets/projects/booki.webp",
+      "alt": "representation of the Booki project",
+      "description": "Booki is a landing page for a fictional book store. It was created using HTML and CSS. The main goal of this project was to practice my skills in responsive design. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
+      "tags": ["HTML", "CSS"],
+      "link": ""
+    },
+    {
+      "id": 2,
+      "title": "Ohmyfood",
+      "cover": "/assets/projects/ohmyfood.webp",
+      "alt": "representation of the Ohmyfood project",
+      "description": "Ohmyfood is a landing page for a fictional food delivery app. It was created using HTML, CSS and Sass. The main goal of this project was to practice my skills in responsive design and animations. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
+      "tags": ["HTML", "CSS", "Sass"]
+    },
+    {
+      "id": 3,
+      "title": "Sophie Bluel",
+      "cover": "/assets/projects/sophiebluel.webp",
+      "alt": "representation of the Sophie Bluel project",
+      "description": "Sophie Bluel is a landing page for a fictional fashion brand. It was created using HTML, CSS and JavaScript. The main goal of this project was to practice my skills in responsive design and JavaScript. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
+      "tags": ["HTML", "CSS", "Sass", "JavaScript"]
+    },
+    {
+      "id": 4,
+      "title": "Kasa",
+      "cover": "/assets/projects/kasa.webp",
+      "alt": "representation of the Sophie Bluel project",
+      "description": "",
+      "tags": ["React", "JavaScript", "Sass"]
+    },
+    {
+      "id": 5,
+      "title": "Nina Carducci",
+      "cover": "/assets/projects/ninacarducci.webp",
+      "alt": "representation of the Sophie Bluel project",
+      "description": "",
+      "tags": ["React", "JavaScript", "Sass"]
+    },
+    {
+      "id": 6,
+      "title": "724 Events",
+      "cover": "/assets/projects/724events.webp",
+      "alt": "representation of the Sophie Bluel project",
+      "description": "",
+      "tags": ["React", "JavaScript", "Sass"]
+    },
+    {
+      "id": 7,
+      "title": "Argent Bank",
+      "cover": "/assets/projects/argentbank.webp",
+      "alt": "representation of the Sophie Bluel project",
+      "description": "",
+      "tags": ["React", "JavaScript", "Sass"]
+    },
+    {
+      "id": 8,
+      "title": "My Portfolio",
+      "cover": "/assets/projects/myportfolio.webp",
+      "alt": "representation of my portfolio",
+      "description": "",
+      "tags": ["Next.js", "Typescript", "Tailwind CSS"]
+    }
+  ]
+}
