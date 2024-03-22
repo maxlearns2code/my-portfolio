@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import "./globals.scss";
 import { Providers } from "./providers";
+import Footer from "./containers/Footer";
 
 export const metadata: Metadata = {
   title: "Max | Front-End Developer",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <main>{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>
