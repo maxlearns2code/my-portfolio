@@ -8,7 +8,7 @@ const Home = () => {
       id="home"
       className="w-full md:h-screen px-5 md:px-10 pt-10 flex items-center text-center md:text-left overflow-hidden"
     >
-      <div className="max-w-[1440px] m-auto pt-14 flex flex-col-reverse md:flex-row gap-8 items-center">
+      <div className="max-w-[1440px] m-auto pt-14 md:pt-0 flex flex-col-reverse md:flex-row gap-8 items-center">
         <div className="md:w-[50%] text-animation md:pl-20">
           <p className="mt-8 mb-3 text:sm md:text-lg tracking-widest">
             Let&apos;s build something amazing together.

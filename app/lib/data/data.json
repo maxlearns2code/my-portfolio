@@ -5,65 +5,72 @@
       "title": "Booki",
       "cover": "/assets/projects/booki.webp",
       "alt": "representation of the Booki project",
-      "description": "Booki is a landing page for a fictional book store. It was created using HTML and CSS. The main goal of this project was to practice my skills in responsive design. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
+      "description": "I created the homepage of a travel agency using HTML and CSS, integrating responsive design based on Figma mockups for various devices. This project honed my skills in responsive design and HTML/CSS integration, laying the groundwork for proficient front-end development.",
       "tags": ["HTML", "CSS"],
-      "link": ""
+      "link": "https://github.com/maxlearns2code/Booki"
     },
     {
       "id": 2,
       "title": "Ohmyfood",
       "cover": "/assets/projects/ohmyfood.webp",
       "alt": "representation of the Ohmyfood project",
-      "description": "Ohmyfood is a landing page for a fictional food delivery app. It was created using HTML, CSS and Sass. The main goal of this project was to practice my skills in responsive design and animations. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
-      "tags": ["HTML", "CSS", "Sass"]
+      "description": "I improved a website interface by integrating a mobile-first design, implementing CSS animations using Sass, and versioning the project with Git and GitHub. Our goal was to enhance user experience by making the site responsive and interactive.",
+      "tags": ["HTML", "CSS", "Sass"],
+      "link": "https://github.com/maxlearns2code/Ohmyfood"
     },
     {
       "id": 3,
       "title": "Sophie Bluel",
       "cover": "/assets/projects/sophiebluel.webp",
       "alt": "representation of the Sophie Bluel project",
-      "description": "Sophie Bluel is a landing page for a fictional fashion brand. It was created using HTML, CSS and JavaScript. The main goal of this project was to practice my skills in responsive design and JavaScript. The project is hosted on GitHub Pages and you can check it out by clicking the button below",
-      "tags": ["HTML", "CSS", "Sass", "JavaScript"]
+      "description": "I developed the architect's work presentation page from provided HTML, along with an admin login page and a modal for media uploads, honing my JavaScript skills extensively.",
+      "tags": ["HTML", "CSS", "Sass", "JavaScript"],
+      "link": "https://github.com/maxlearns2code/Portfolio-architecte-sophie-bluel"
     },
     {
       "id": 4,
       "title": "Kasa",
       "cover": "/assets/projects/kasa.webp",
-      "alt": "representation of the Sophie Bluel project",
-      "description": "",
-      "tags": ["React", "JavaScript", "Sass"]
+      "alt": "representation of the Kasa project",
+      "description": "I created a web application for real estate rental using React and React Router, focusing on data presentation logic and React components and managed state with React Hooks.",
+      "tags": ["React", "React-Router"],
+      "link": "https://github.com/maxlearns2code/Kasa"
     },
     {
       "id": 5,
       "title": "Nina Carducci",
       "cover": "/assets/projects/ninacarducci.webp",
-      "alt": "representation of the Sophie Bluel project",
-      "description": "",
-      "tags": ["React", "JavaScript", "Sass"]
+      "alt": "visualization of the Nina Carducci project",
+      "description": " I optimized a photographer's website by identifying and resolving loading and SEO issues, improving code structure, speed, and accessibility. Utilizing tools like Lighthouse and Wave, I implemented changes, documented through before-and-after reports with audit screenshots and detailed explanations.",
+      "tags": ["SEO", "Accessibility", "Performance"],
+      "link": "https://github.com/maxlearns2code/Nina_Carducci"
     },
     {
       "id": 6,
       "title": "724 Events",
       "cover": "/assets/projects/724events.webp",
-      "alt": "representation of the Sophie Bluel project",
-      "description": "",
-      "tags": ["React", "JavaScript", "Sass"]
+      "alt": "visualization of the 724 Events project",
+      "description": "I debugged and finalized the development of a one-page website, utilizing Chrome DevTools to identify and resolve existing issues. Additionally, I managed the project using Yarn, Node.js, GitHub for version control, and Visual Studio Code for coding and debugging tasks.",
+      "tags": ["Jest"],
+      "link": "https://github.com/maxlearns2code/724events"
     },
     {
       "id": 7,
       "title": "Argent Bank",
       "cover": "/assets/projects/argentbank.webp",
-      "alt": "representation of the Sophie Bluel project",
-      "description": "",
-      "tags": ["React", "JavaScript", "Sass"]
+      "alt": "visualization of the Argent Bank project",
+      "description": "I developed the front-end of a banking application using React and Redux to create a dynamic user experience. I integrated it with the back-end through API calls. I utilized Swagger to define API endpoints and modeled interactions with transaction data.",
+      "tags": ["React", "Redux", "Swagger"],
+      "link": "https://github.com/maxlearns2code/ArgentBank"
     },
     {
       "id": 8,
       "title": "My Portfolio",
       "cover": "/assets/projects/myportfolio.webp",
-      "alt": "representation of my portfolio",
-      "description": "",
-      "tags": ["Next.js", "Typescript", "Tailwind CSS"]
+      "alt": "visualization of my portfolio",
+      "description": "I successfully created and published my developer portfolio, utilizing Next.js, TypeScript, and Tailwind CSS. It showcased my skills, projects, and professional journey in a visually appealing and responsive manner, demonstrating proficiency in web development and SEO optimization.",
+      "tags": ["Next.js", "Typescript", "Tailwind CSS"],
+      "link": "https://github.com/maxlearns2code/my-portfolio"
     }
   ]
 }

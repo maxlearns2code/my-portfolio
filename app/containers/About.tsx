@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <section id="about" className="w-full md:h-screen px-5 md:px-10 pt-10 flex items-center">
-      <div className="max-w-[1440px] m-auto pt-14 w-full md:grid grid-cols-4 gap-8 items-center">
+      <div className="max-w-[1440px] m-auto pt-14 md:pt-0 w-full md:grid grid-cols-4 gap-8 items-center">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-tertiary-color dark:text-quaternary-color">
             About

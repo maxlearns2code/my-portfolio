@@ -19,6 +19,7 @@ const Projects = () => {
                 alt={el.alt}
                 title={el.title}
                 description={el.description}
+                link={el.link}
               />
             );
           })}
