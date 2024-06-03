@@ -6,7 +6,7 @@ interface IconProps {
 const Icon: React.FC<IconProps> = ({ name }) => {
   let icon;
   switch (name) {
-    case "html":
+    case "HTML":
       icon = (
         <svg
           viewBox="0 0 32 32"
@@ -49,7 +49,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "css":
+    case "CSS":
       icon = (
         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -70,7 +70,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "sass":
+    case "Sass":
       icon = (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "tailwind":
+    case "Tailwind CSS":
       icon = (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
           <title>{"file_type_tailwind"}</title>
@@ -97,7 +97,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "javascript":
+    case "JavaScript":
       icon = (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
           <path fill="#FFCA28" d="M2 2h28v28H2z" />
@@ -108,7 +108,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "react":
+    case "React":
       icon = (
         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -133,7 +133,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "next":
+    case "NextJS":
       icon = (
         <svg
           viewBox="0 0 256 256"
@@ -163,7 +163,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "TS":
+    case "Typescript":
       icon = (
         <svg
           viewBox="0 0 256 256"
@@ -208,7 +208,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "figma":
+    case "Figma":
       icon = (
         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -253,7 +253,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "redux":
+    case "Redux Toolkit":
       icon = (
         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -272,7 +272,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "jest":
+    case "Jest":
       icon = (
         <svg
           viewBox="0 0 32 32"
@@ -299,7 +299,7 @@ const Icon: React.FC<IconProps> = ({ name }) => {
         </svg>
       );
       break;
-    case "github":
+    case "Github":
       icon = (
         <svg
           viewBox="0 0 20 20"

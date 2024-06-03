@@ -72,5 +72,55 @@
       "tags": ["Next.js", "Typescript", "Tailwind CSS"],
       "link": "https://github.com/maxlearns2code/my-portfolio"
     }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML"
+    },
+    {
+      "id": 2,
+      "name": "CSS"
+    },
+    {
+      "id": 3,
+      "name": "Sass"
+    },
+    {
+      "id": 4,
+      "name": "Tailwind CSS"
+    },
+    {
+      "id": 5,
+      "name": "JavaScript"
+    },
+    {
+      "id": 6,
+      "name": "React"
+    },
+    {
+      "id": 7,
+      "name": "NextJS"
+    },
+    {
+      "id": 8,
+      "name": "Typescript"
+    },
+    {
+      "id": 9,
+      "name": "Redux Toolkit"
+    },
+    {
+      "id": 10,
+      "name": "Jest"
+    },
+    {
+      "id": 11,
+      "name": "Github"
+    },
+    {
+      "id": 12,
+      "name": "Figma"
+    }
   ]
 }
