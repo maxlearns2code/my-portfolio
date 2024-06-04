@@ -1,10 +1,8 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { CiDark, CiLight } from "react-icons/ci";
-import { WiMoonAltFull } from "react-icons/wi";
+import { FaRegStar, FaRegMoon, FaRegSun } from "react-icons/fa";
 
 export default function ThemeSwitch() {
   const [mounted, setMounted] = useState(false);
@@ -14,12 +12,22 @@ export default function ThemeSwitch() {
 
   if (!mounted)
     return (
-      <WiMoonAltFull size={25} />
+      <button className="px-2 md:px-2 pb-2">
+        <FaRegStar />
+      </button>
     );
   if (resolvedTheme === "dark") {
-    return <CiLight size={25} onClick={() => setTheme("light")} />;
+    return (
+      <button className="px-2 md:px-2 pb-2" onClick={() => setTheme("light")}>
+        <FaRegSun />
+      </button>
+    );
   }
   if (resolvedTheme === "light") {
-    return <CiDark size={25} onClick={() => setTheme("dark")} />;
+    return (
+      <button className="px-2 md:px-2 pb-2" onClick={() => setTheme("dark")}>
+        <FaRegMoon />
+      </button>
+    );
   }
 }
