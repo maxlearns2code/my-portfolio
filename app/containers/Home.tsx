@@ -26,7 +26,7 @@ const Home = () => {
               <button className="mr-8">Hire me</button>
             </Link>
             <Link
-              href="/assets/maxdewyntercv.jpg"
+              href="/assets/CVMaximeDewynter.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
