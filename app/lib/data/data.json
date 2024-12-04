@@ -112,14 +112,30 @@
     },
     {
       "id": 10,
-      "name": "Jest"
+      "name": "Node.js"
     },
     {
       "id": 11,
-      "name": "Github"
+      "name": "Express.js"
     },
     {
       "id": 12,
+      "name": "MongoDB"
+    },
+    {
+      "id": 13,
+      "name": "GitHub"
+    },
+    {
+      "id": 14,
+      "name": "Jest"
+    },
+    {
+      "id": 15,
+      "name": "Framer Motion"
+    },
+    {
+      "id": 16,
       "name": "Figma"
     }
   ]
