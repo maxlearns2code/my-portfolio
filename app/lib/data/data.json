@@ -138,5 +138,71 @@
       "id": 16,
       "name": "Figma"
     }
+  ],
+  "qa": [
+    {
+      "question": "What services do you offer as a freelance frontend developer?",
+      "answer": "I design and build modern, performant websites and web apps using React, Next.js, and TypeScript. I also handle responsive design, localization, SEO optimization, and performance tuning."
+    },
+    {
+      "question": "What kind of companies or clients do you typically work with?",
+      "answer": "I collaborate with startups, nonprofits, local businesses, and sports organizations. I focus on projects where I can make a measurable impact on user experience and business growth."
+    },
+    {
+      "question": "Can you handle both design and development?",
+      "answer": "Yes. While I focus on frontend development, I often work closely with Figma designs or create simple mockups myself. I build clean, accessible, and responsive UIs that follow modern design principles."
+    },
+    {
+      "question": "How do you approach collaboration and communication?",
+      "answer": "I value open, proactive communication. I enjoy working in cross-functional teams, understanding client goals, and ensuring alignment between design, development, and business needs."
+    },
+    {
+      "question": "How do you ensure projects stay on track?",
+      "answer": "With my background in finance and HR, I’m extremely organized and deadline-driven. I break projects into manageable tasks and use agile or kanban-style workflows to stay efficient."
+    },
+    {
+      "question": "How do you handle localization and multilingual support?",
+      "answer": "I have hands-on experience building multilingual sites using `next-intl`, JSON-based translations, and localized routing. My volleyball club website supports 8 languages."
+    },
+    {
+      "question": "What’s your personality like?",
+      "answer": "I’m calm under pressure, curious, and collaborative. I love solving problems, learning new tools, and continuously improving both myself and my code."
+    },
+    {
+      "question": "How does your previous experience help in tech?",
+      "answer": "With over 15 years in finance and HR, I bring strong analytical skills, stakeholder understanding, and business strategy alignment into tech projects."
+    },
+    {
+      "question": "What are your core values as a developer?",
+      "answer": "Clarity, quality, and empathy. I build with the end-user in mind, keep my codebase clean and maintainable, and always communicate openly with clients or team members."
+    },
+    {
+      "question": "What tech do you use regularly?",
+      "answer": "React, Next.js 14, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, Git, Jest, Storybook, and tools like Figma for design collaboration."
+    },
+    {
+      "question": "Can I see your portfolio and GitHub?",
+      "answer": "Sure! My portfolio: https://my-portfolio-max-dewynter.vercel.app/ and GitHub: https://github.com/maxlearns2code"
+    },
+    {
+      "question": "Do you speak multiple languages?",
+      "answer": "Yes! I’m fluent in French, speak professional English, and I'm learning Swedish. This helps when working in international or multilingual teams."
+    },
+    {
+      "question": "What’s your availability like?",
+      "answer": "I’m currently open to both freelance projects and full-time opportunities. I’m flexible with remote or hybrid roles."
+    },
+    {
+      "question": "Why should we work with you?",
+      "answer": "I combine deep business experience with modern tech skills. You’ll get someone who understands strategy, communicates well, and delivers high-quality, scalable solutions tailored to your needs."
+    },
+    {
+      "question": "How do you stay updated in frontend development?",
+      "answer": "I regularly explore new technologies, follow industry news, contribute to projects, and learn from communities. I’m especially interested in Web3 and AI integrations."
+    },
+    {
+      "question": "What do you do outside of work?",
+      "answer": "I play volleyball competitively with Rågsveds IF, where I also help with digital efforts. I love learning, traveling, and working on passion projects that help others."
+    }
   ]
 }

@@ -3,6 +3,7 @@ import Contact from "./containers/Contact";
 import Home from "./containers/Home";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
+import ChatBot from "./components/ChatBot";
 
 export default function Main() {
   return (
@@ -12,6 +13,8 @@ export default function Main() {
       <Skills />
       <Projects />
       <Contact />
+      <ChatBot />
     </>
   );
 }
+
